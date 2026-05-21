@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+pybaseball>=2.2
+matplotlib
+jupyter
+# Note: era-adjusted historical stats come from the `fullhouse` R package,
+# extracted via extract_era_adjusted_data.R. R + the Lahman + fullhouse R
+# packages are required for that step (not via pip).

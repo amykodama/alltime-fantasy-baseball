@@ -1,0 +1,61 @@
+{
+  "n_train": 352,
+  "n_test": 89,
+  "pa_threshold": 501,
+  "feature_cols": [
+    "hr_per_600",
+    "bats_L",
+    "bats_S"
+  ],
+  "linear": {
+    "coef": {
+      "hr_per_600": 1.3835613224331798,
+      "bats_L": 1.6532131981607252,
+      "bats_S": 1.4464873914663556
+    },
+    "intercept": 22.246571893688067,
+    "metrics": {
+      "model": "linear",
+      "mae": 5.22031982400733,
+      "r2": 0.6971289455072008,
+      "max_error": 25.816938925912908
+    }
+  },
+  "polynomial_deg2": {
+    "metrics": {
+      "model": "polynomial_deg2",
+      "mae": 5.138742360634068,
+      "r2": 0.703634287807607,
+      "max_error": 25.408563785775826
+    }
+  },
+  "sanity_checks": [
+    {
+      "label": "Aaron Judge (high power)",
+      "hist_id": "judgeaa01",
+      "name": "Aaron Judge",
+      "actual_pow": 80,
+      "hr_per_600": 44.31486880466472,
+      "predicted_linear": 83.55891038052285,
+      "predicted_polynomial": 82.5928779268094
+    },
+    {
+      "label": "Bo Bichette (median POW)",
+      "hist_id": "bichebo01",
+      "name": "Bo Bichette",
+      "actual_pow": 45,
+      "hr_per_600": 19.755244755244757,
+      "predicted_linear": 49.57916445224564,
+      "predicted_polynomial": 49.409124341690045
+    },
+    {
+      "label": "Ezequiel Duran (low POW)",
+      "hist_id": "duranez01",
+      "name": "Ezequiel Duran",
+      "actual_pow": 20,
+      "hr_per_600": 11.2012987012987,
+      "predicted_linear": 37.74425553782596,
+      "predicted_polynomial": 38.140382373354434
+    }
+  ]
+}
